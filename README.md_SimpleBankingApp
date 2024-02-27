@@ -1,21 +1,32 @@
 # Simple Banking App
 
-A simple console-based banking application written in Java.
+The Simple Banking App is a Java-based application that simulates basic banking operations. This application allows users to create an account with an initial deposit, make additional deposits, withdraw funds, and check their account balance.
 
-## Overview
+## Features
 
-This Java program provides basic banking functionality, allowing users to create an account, deposit money, withdraw money, check their balance, and exit the program.
+- **Create Account**: Start a new account with an initial deposit amount.
+- **Deposit**: Add funds to your account.
+- **Withdraw**: Withdraw funds from your account, provided you have sufficient balance.
+- **Check Balance**: View the current balance of your account.
+- **Exit**: Close the application.
 
-##Features
-Create Account: Users can create a new account with an initial deposit.
-Deposit: Add money to the account.
-Withdraw: Subtract money from the account, ensuring sufficient funds.
-Check Balance: Display the current account balance.
-Exit: Quit the program.
+## How to Run
 
-## How to Use
+To run the Simple Banking App, ensure you have Java installed on your computer. Follow these steps:
 
-1. Clone the repository:
+1. Compile the program using the Java compiler: `javac SimpleBankingApp.java`.
+2. Run the compiled program with Java: `java SimpleBankingApp`.
 
-   ```bash
-   git clone https://github.com/priyanshusharma9999/simple-banking-app.git
+## Usage
+
+Upon launching the Simple Banking App, you will be presented with a menu of options:
+
+1.Create Account
+2.Deposit
+3.Withdraw
+4.Check Balance
+5.Exit
+
+Enter your choice: 1
+Enter initial deposit amount: $1000
+Account created successfully with an initial deposit of $1000
