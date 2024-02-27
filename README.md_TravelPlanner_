@@ -1,0 +1,74 @@
+# Travel Planner
+
+The Travel Planner is a simple Java application designed to help users manage their travel itineraries. It allows users to add destinations with start and end dates and budgets, generate an itinerary overview, and calculate the total budget for their travels.
+
+## Features
+
+- **Add Destinations**: Users can add multiple destinations, including the name, start and end dates, and the budget for each.
+- **Generate Itinerary**: Users can view their complete travel itinerary, including all added destinations with their details.
+- **Calculate Total Budget**: Users can calculate the total budget required for all the destinations in their itinerary.
+
+## How to Run
+
+To run the Travel Planner, you will need a Java Runtime Environment (JRE) installed on your system. Follow these steps:
+
+1. Compile the program using `javac TravelPlanner.java`.
+2. Run the program with `java TravelPlanner`.
+
+## Usage
+
+Upon running the Travel Planner, you will be presented with a menu of options:
+
+1. **Add Destination**: Add a new destination to your travel itinerary.
+2. **Generate Itinerary**: Display the current list of destinations with their details.
+3. **Calculate Total Budget**: Calculate and display the total budget for your itinerary.
+4. **Exit**: Exit the program.
+
+Follow the on-screen prompts to use the features.
+
+## Example
+
+
+To create a README.md file for your Java Travel Planner program, you would want to include several key sections to make it informative and useful for anyone looking at your project. Below is a template you can use, filled with details relevant to your Travel Planner program. Feel free to adjust the content as you see fit:
+
+markdown
+Copy code
+# Travel Planner
+
+The Travel Planner is a simple Java application designed to help users manage their travel itineraries. It allows users to add destinations with start and end dates and budgets, generate an itinerary overview, and calculate the total budget for their travels.
+
+## Features
+
+- **Add Destinations**: Users can add multiple destinations, including the name, start and end dates, and the budget for each.
+- **Generate Itinerary**: Users can view their complete travel itinerary, including all added destinations with their details.
+- **Calculate Total Budget**: Users can calculate the total budget required for all the destinations in their itinerary.
+
+## How to Run
+
+To run the Travel Planner, you will need a Java Runtime Environment (JRE) installed on your system. Follow these steps:
+
+1. Compile the program using `javac TravelPlanner.java`.
+2. Run the program with `java TravelPlanner`.
+
+## Usage
+
+Upon running the Travel Planner, you will be presented with a menu of options:
+
+1. **Add Destination**: Add a new destination to your travel itinerary.
+2. **Generate Itinerary**: Display the current list of destinations with their details.
+3. **Calculate Total Budget**: Calculate and display the total budget for your itinerary.
+4. **Exit**: Exit the program.
+
+Follow the on-screen prompts to use the features.
+
+## OUTPUT
+
+1.Add Destination
+2.Generate Itinerary
+3.Calculate Total Budget
+4.Exit
+Choose an option: 1
+Enter Destination Name: Paris
+Enter Start Date: 2023-04-01
+Enter End Date: 2023-04-10
+Enter Budget: 1500
