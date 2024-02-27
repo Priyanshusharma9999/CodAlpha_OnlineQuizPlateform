@@ -7,22 +7,17 @@ A simple Java program to track and analyze student grades.
 This program allows you to input grades for a specified number of students, calculate the average grade, and find the highest and lowest grades.
 
 ##Features
-Enter Grades:
+Enter Grades:Allows the teacher to input grades for each student.
+Calculate Average:Computes the average grade across all students.
+Highest Score:Identifies the highest score among all students.
+Lowest Score:Identifies the lowest score among all students.
 
-Allows the teacher to input grades for each student.
-Calculate Average:
+##Output
+Enter the number of students: 3
+Enter grade for student 1: 85
+Enter grade for student 2: 92
+Enter grade for student 3: 76
 
-Computes the average grade across all students.
-Highest Score:
-
-Identifies the highest score among all students.
-Lowest Score:
-
-Identifies the lowest score among all students.
-
-## How to Use
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/priyanshusharma9999/student-grade-tracker.git
+Average Grade: 84.33
+Highest Grade: 92
+Lowest Grade: 76
