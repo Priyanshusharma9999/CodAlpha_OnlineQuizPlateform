@@ -1,0 +1,110 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+// For simplicity, consider using external APIs for maps and weather in a real-world scenario.
+
+class Destination {
+    private String name;
+    private String startDate;
+    private String endDate;
+    private double budget;
+
+    public Destination(String name, String startDate, String endDate, double budget) {
+        this.name = name;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.budget = budget;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public double getBudget() {
+        return budget;
+    }
+}
+
+class TravelItinerary {
+    private List<Destination> destinations;
+
+    public TravelItinerary() {
+        destinations = new ArrayList<>();
+    }
+
+    public void addDestination(String name, String startDate, String endDate, double budget) {
+        Destination destination = new Destination(name, startDate, endDate, budget);
+        destinations.add(destination);
+    }
+
+    public void generateItinerary() {
+        for (Destination destination : destinations) {
+            System.out.println("\nDestination: " + destination.getName());
+            System.out.println("Start Date: " + destination.getStartDate());
+            System.out.println("End Date: " + destination.getEndDate());
+            System.out.println("Budget: " + destination.getBudget());
+
+            // Include additional features like maps and weather information here
+        }
+    }
+
+    public double calculateTotalBudget() {
+        double totalBudget = 0;
+        for (Destination destination : destinations) {
+            totalBudget += destination.getBudget();
+        }
+        return totalBudget;
+    }
+}
+
+public class TravelPlanner {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        TravelItinerary travelItinerary = new TravelItinerary();
+
+        while (true) {
+            System.out.println("\n1. Add Destination");
+            System.out.println("2. Generate Itinerary");
+            System.out.println("3. Calculate Total Budget");
+            System.out.println("4. Exit");
+            System.out.print("Choose an option: ");
+
+            int choice = scanner.nextInt();
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter Destination Name: ");
+                    String name = scanner.next();
+                    System.out.print("Enter Start Date: ");
+                    String startDate = scanner.next();
+                    System.out.print("Enter End Date: ");
+                    String endDate = scanner.next();
+                    System.out.print("Enter Budget: ");
+                    double budget = scanner.nextDouble();
+
+                    travelItinerary.addDestination(name, startDate, endDate, budget);
+                    break;
+                case 2:
+                    travelItinerary.generateItinerary();
+                    break;
+                case 3:
+                    System.out.println("Total Budget: " + travelItinerary.calculateTotalBudget());
+                    break;
+                case 4:
+                    System.out.println("Exiting the program. Thank you!");
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice. Please choose a valid option.");
+            }
+        }
+    }
+}
